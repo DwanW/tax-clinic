@@ -16,7 +16,7 @@ const Header: React.FC<HeaderProps> = ({ siteTitle = `` }) => {
   }
 
   return (
-    <div className="relative bg-white z-50">
+    <div className="sticky top-0 bg-white z-50">
       <DesktopMenu openMenu={openMenu} />
       <MobileMenu
         isFadeIn={isFadeIn}

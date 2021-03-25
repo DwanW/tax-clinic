@@ -1,4 +1,7 @@
 import React from "react"
+import { Link } from "gatsby"
+import { navigate } from "@reach/router"
+import { StaticImage } from "gatsby-plugin-image"
 
 interface MobileMenuProps {
   isFadeIn: Boolean
@@ -24,10 +27,14 @@ const MobileMenu: React.FC<MobileMenuProps> = ({
         <div className="pt-5 pb-6 px-5">
           <div className="flex items-center justify-between">
             <div>
-              <img
-                className="h-8 w-auto"
-                src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
-                alt="Workflow"
+              <StaticImage
+                imgClassName="h-8 w-auto"
+                src="../../images/logo.png"
+                alt="Hero Image"
+                layout="constrained"
+                height={32}
+                formats={["png"]}
+                aspectRatio={2 / 1}
               />
             </div>
             <div className="-mr-2">
@@ -59,35 +66,61 @@ const MobileMenu: React.FC<MobileMenuProps> = ({
         </div>
         <div className="py-6 px-5 space-y-6">
           <div className="grid grid-cols-1 gap-y-4 gap-x-8">
-            <a
-              href="#"
-              className="text-base font-medium text-gray-900 hover:text-gray-700"
+            <button
+              onClick={() => {
+                navigate("/#eligibility")
+                setIsFadeIn(!isFadeIn)
+              }}
+              className="text-left text-base font-medium text-gray-900 hover:text-gray-700"
             >
               Eligibility
-            </a>
+            </button>
+
+            <button
+              onClick={() => {
+                navigate("/#documents")
+                setIsFadeIn(!isFadeIn)
+              }}
+              className="text-left text-base font-medium text-gray-900 hover:text-gray-700"
+            >
+              Documents
+            </button>
 
             <a
-              href="#"
-              className="text-base font-medium text-gray-900 hover:text-gray-700"
+              className="text-left text-base font-medium text-gray-900 hover:text-gray-700"
+              href="https://www.canada.ca/en/services/taxes/income-tax/personal-income-tax.html"
+              target="__blank"
             >
-              COVID Updates
+              Resource
             </a>
+            <button
+              onClick={() => {
+                navigate("/contact")
+                setIsFadeIn(!isFadeIn)
+              }}
+              className="text-left text-base font-medium text-gray-900 hover:text-gray-700"
+            >
+              Volunteer
+            </button>
           </div>
           <div>
-            <a
-              href="#"
+            <Link
+              to="/contact"
               className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"
             >
               Contact Us
-            </a>
+            </Link>
             <p className="mt-6 text-center text-base font-medium text-gray-500">
               Check out our hours of Operation -
-              <a
-                href="#"
-                className="text-indigo-700 hover:text-indigo-600 ml-3"
+              <button
+                onClick={() => {
+                  navigate("/#hours")
+                  setIsFadeIn(!isFadeIn)
+                }}
+                className="text-indigo-700 font-bold hover:text-indigo-600 ml-1"
               >
                 Here
-              </a>
+              </button>
             </p>
           </div>
         </div>
