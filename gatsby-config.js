@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `DW Tax Clinic`,
     description: `Help Families with tax returns for free`,
-    author: `DW`,
+    author: `DwanW`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -19,11 +19,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `ShinyLight`,
+        short_name: `SL`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#4338ca`,
+        theme_color: `#4338ca`,
         display: `minimal-ui`,
         icon: `src/images/logo.png`, // This path is relative to the root of the site.
       },
