@@ -16,12 +16,11 @@ const DesktopMenu: React.FC<DesktopMenuProps> = ({ openMenu }) => {
             <span className="sr-only">Logo Icon</span>
             <StaticImage
               imgClassName="h-8 w-auto sm:h-10"
-              src="../../images/logo.png"
+              src="../../images/logo-main.png"
               alt="Hero Image"
               layout="constrained"
-              height={32}
+              height={50}
               formats={["png"]}
-              aspectRatio={2 / 1}
             />
           </Link>
         </div>
@@ -71,7 +70,7 @@ const DesktopMenu: React.FC<DesktopMenuProps> = ({ openMenu }) => {
             Resource
           </a>
           <Link
-            to="/contact"
+            to="/volunteer"
             className="p-2 text-base font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:ring focus:ring-offset-gray-100"
           >
             Volunteer

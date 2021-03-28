@@ -29,12 +29,11 @@ const MobileMenu: React.FC<MobileMenuProps> = ({
             <div>
               <StaticImage
                 imgClassName="h-8 w-auto"
-                src="../../images/logo.png"
+                src="../../images/logo-main.png"
                 alt="Hero Image"
                 layout="constrained"
-                height={32}
+                height={50}
                 formats={["png"]}
-                aspectRatio={2 / 1}
               />
             </div>
             <div className="-mr-2">
@@ -95,7 +94,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({
             </a>
             <button
               onClick={() => {
-                navigate("/contact")
+                navigate("/volunteer")
                 setIsFadeIn(!isFadeIn)
               }}
               className="text-left text-base font-medium text-gray-900 hover:text-gray-700"
