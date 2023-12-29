@@ -10,15 +10,6 @@ const Hero: React.FC<HeroProps> = ({}) => {
         <main className="h-80 mt-10 mx-auto px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
           <div className="sm:text-center lg:text-left">
             <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
-              <StaticImage
-                imgClassName=" h-8 w-auto sm:h-10"
-                src="../../images/logo.png"
-                alt="Hero Image"
-                layout="constrained"
-                height={100}
-                formats={["png"]}
-                aspectRatio={2 / 1}
-              />
               <span className="text-2xl sm:text-3xl md:text-4xl block">
                 File your return
               </span>
