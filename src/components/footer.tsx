@@ -20,7 +20,7 @@ const Footer: React.FC<FooterProps> = () => (
           </Link>
         </div>
         <div className="text-sm text-left py-2 max-w-md mx-auto text-gray-600">
-          DW Tax Clinic is a CRA recognized community organization that host
+          Shining Light Tax Clinic is a CRA recognized community organization that host
           free virtual tax clinics
         </div>
       </div>
